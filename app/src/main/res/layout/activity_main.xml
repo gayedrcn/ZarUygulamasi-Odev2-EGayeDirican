@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aa"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/zaratButton"
+        android:layout_width="110dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/zar_at"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/zar1Image" />
+
+    <Button
+        android:id="@+id/temizleButton"
+        android:layout_width="110dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="80dp"
+        android:text="@string/temizle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/zaratButton"
+        app:layout_constraintTop_toBottomOf="@+id/zar2Image" />
+
+    <ImageView
+        android:id="@+id/zar1Image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="80dp"
+        android:contentDescription="TODO"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/empty_dice" />
+
+    <ImageView
+        android:id="@+id/zar2Image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="80dp"
+        android:contentDescription="TODO"
+        app:layout_constraintStart_toStartOf="@+id/zar1Image"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/empty_dice" />
+</androidx.constraintlayout.widget.ConstraintLayout>
